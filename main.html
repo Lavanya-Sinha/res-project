@@ -1,0 +1,99 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title>Resproject</title>
+    <link rel="stylesheet" href="/home/lavanya/Desktop/work_space/Program Files/resproject/css/style.css">
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <script src="/home/lavanya/Desktop/work_space/Program Files/resproject/js/jquery.js"></script>
+   <script>
+   var showWidth = 1;
+    if (showWidth == 1){
+        $(document).ready(function(){
+            $(window).resize(function(){
+                var width = $(window).width();
+                document.getElementById('output_width').innerHTML="Window Width :" + width.toString();
+            });
+        });
+    }
+    </script>
+</head>
+<body>
+    <div id="output_width"></div>
+    <div id="container">
+        <header class="main_header">
+            <img id="logo"
+                src="data:image/png;base64,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"
+                alt="Resproject">
+            <nav class="main_nav">
+                <ul>
+                    <li><a class="active" href="#">Home</li>
+                    <li><a href="#">Learn</li>
+                    <li><a href="#">Brainstorm</li>
+                    <li><a href="#">Create</li>
+                    <li><a href="#">Collaborate</li>
+                    <li><a href="#">Teach</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main">
+            <div id="content">
+                <article class="art_1">
+                    <header class="art_header">
+                        <h2 class="title"><a href="#">First Post</a></h2>
+                        <span>Created By : Brad Trevorsy on October 7, 2013</span>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu est, lacinia et nisi nec,
+                        vehicula pretium magna. Nulla ut nisl vel lorem posuere aliquam a feugiat sapien. Suspendisse
+                        tincidunt mauris at consequat ornare. Donec condimentum consequat felis a sodales. Donec
+                        vestibulum imperdiet nisl id vulputate.</p>
+                    <p>Aenean in tellus ut nibh dignissim adipiscing nec eget libero. Donec eu diam quam. Sed fermentum
+                        elementum ultrices. Aliquam erat volutpat. Integer sollicitudin lacus quis est elementum
+                        tincidunt. Praesent mattis, felis a hendrerit tempus, risus orci mollis massa, a porta lorem
+                        libero id purus.</p>
+                    <a class="read_more" href="#">Read More</a>
+                </article>
+                <article class="art_2">
+                    <header class="art_header">
+                        <h2 class="title"><a href="#">Second Post</a></h2>
+                        <span>Created By : Brad Trevorsy on October 7, 2013</span>
+                    </header>
+                    <p>In in rutrum sapien. Ut tellus nibh, facilisis faucibus pulvinar vitae, sagittis at orci. In sem
+                        tellus, faucibus non eros sit amet, tincidunt dictum ligula. Fusce ornare sodales nisi, non
+                        aliquet lacus rutrum in. Vestibulum in sem urna. Cras commodo massa enim, non hendrerit lacus
+                        pretium vel.</p>
+                    <p>Aliquam tristique augue vitae urna aliquet, et volutpat metus gravida. Mauris nec ornare nisl.
+                        Sed egestas mi et viverra sollicitudin. Fusce hendrerit adipiscing ipsum, ut suscipit nibh
+                        convallis fringilla. Mauris tempus id velit at lacinia. Aenean scelerisque ac sem in accumsan.
+                    </p>
+                    <a class="read_more" href="#">Read More</a>
+                </article>
+            </div>
+            <aside id="side_bar">
+                <div class="block">
+                    <h2>Top Sidebar</h2>
+                    <p>Donec eu diam quam sed fermentum elementum ultrices aliquam erat volutpat. In gravida nunc a
+                        metus sodales egestas. Morbi aliquet metus ultricies cursus elementum. </p>
+                </div>
+                <div class="block">
+                    <h2>Mid Slidebar</h2>
+                    <p>Vivamus arcu est quam sed fermentum elementum ultrices aliquam erat volutpat. Vestibulum dolor
+                        dolor, tincidunt vitae augue semper, semper gravida neque pellentesque eleifend.</p>
+                </div>
+                <div class="block">
+                    <h2>Bottom Sidebar</h2>
+                    <p>Lorem ipsum dolor sit amet quam sed fermentum elementum ultrices aliquam erat volutpat. Proin
+                        porta ornare libero, eu aliquet tortor vestibulum sed.</p>
+                </div>
+            </aside>
+        </div>
+        <div class="clr"></div>
+        <footer>
+            <p>Copyright © 2013 - Resproject</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
